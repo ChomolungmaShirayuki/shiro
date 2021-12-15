@@ -83,7 +83,7 @@ body {
 	display: flex;
 }
 
-.maincontent {
+.maincontent_box {
     display: flex;
 	flex-flow: column;
 	border-radius: 10px ;
