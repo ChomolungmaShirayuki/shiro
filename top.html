@@ -8,6 +8,8 @@
         <title>ホーム</title>
         <link rel="stylesheet" href="css/top.css">
         <link rel="stylesheet" href="css/menu.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        
 
     </head>
 
@@ -16,8 +18,18 @@
         
         <div class="contents">
             <!--ヘッダ-->
-            
-            <?php include('./header.php'); ?>
+            <div class="header">
+
+                <!--タイトルロゴ-->
+                <h1 class="logo"><img src="image/common/img_hz_main.png" style="height:60px;"></h1>
+
+                <!--メインの内容-->
+                <!--ヘッダ画像-->
+                <p id="head"><img src="image/common/head.jpeg" class="headimg"></p>
+
+                <p style="height: 8px;background-image: repeating-linear-gradient(45deg, #ccc 0, #ccc 1px, transparent 0, transparent 50%);background-size: 8px 8px;"></p>
+
+            </div>
 
             <!--サイドバー＋メインコンテンツを格納するボックス-->
 
@@ -262,6 +274,11 @@
         
 
         <!--フッタ-->
+        
+        <div id="page"></div>
+        <footer>
+            © 2021 copypet.jp｜パーツで探す、web制作に使えるコピペサイト。 All Rights Reserved.
+        </footer>
         <footer>
             © 2021 copypet.jp｜パーツで探す、web制作に使えるコピペサイト。 All Rights Reserved.
         </footer>
@@ -285,8 +302,8 @@
 
         
         
-
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="load.js"></script>
     </body>
 
 </html>
