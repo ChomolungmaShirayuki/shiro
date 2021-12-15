@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/ fb# prefix属性: http://ogp.me/ns/ prefix属性#">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+        <!--OGPの設定-->
+        <meta property="og:url" content=" ページの URL" />
+        <meta property="og:type" content=" website" /><!--トップページwebsiteそれ以外article-->
+        <meta property="og:title" content=" ページの タイトル" /><!--ページのtitleを指定します。一般的にはサイトの~と同じ内容を設定しますが、サイト名などのブランド情報を含まないtitleを20文字以内で設定することが好ましいとされています。-->
+        <meta property="og:description" content=" ページのディスクリプション" /><!--ページの説明文を指定します。と同様の内容で記述することが多いですが、「og:description」での文字数は80~90文字が最適とされています。の文字数は120文字程度なので、内容をそのままを設定してしまうと表示された際に文字が切れてしまう可能性があるため、OGP用に文章を簡略化するとシェアされた際にユーザーに伝わりやすくなります。-->
+        <meta property="og:site_name" content="サイト名" /><!--ページのサイト名を記述します。サイト名やブランド情報は「og:title」ではなく、この「og:site_neme」に設定します。-->
+        <meta property="og:image" content=" サムネイル画像の URL" /><!--SNS上でシェアされた際に表示させたい画像を絶対パスで指定します。Facebookでは画像サイズを1200×630p、比率で「1.91：1」を推奨しています。-->
+
+        <title>ホーム</title>
+
+
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/menu.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <!--Font Awesome 5のセットアップ-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        
+
+    </head>
+
+    <body>
+
+        
+        <div class="contents">
+            <!--ヘッダ-->
+            <header>
+
+                <!--タイトルロゴ-->
+                <h1 class="logo"><img src="image/common/logo.png" style="height:60px;"></h1>
+
+                <!--メインの内容-->
+                <!--ヘッダ画像-->
+                <p id="head"><img src="image/common/head.jpeg" class="headimg"></p>
+
+                <p style="height: 8px;background-image: repeating-linear-gradient(45deg, #ccc 0, #ccc 1px, transparent 0, transparent 50%);background-size: 8px 8px;"></p>
+
+            </header>
+
+            <!--サイドバー＋メインコンテンツを格納するボックス-->
+
+            <div class="mainbox">
+                <!--空白のボックスで位置を調整-->
+                <div class="voidbox"></div>
+
+                <!--サイドバーのボックス-->
+                <div class="sidebar">
+
+
+                    <!--リンクメニュー-->
+                    <div class="menubox">
+                        <a class="cp_btn_menu">--MENU--</a>
+                        <a href="#" class="cp_btn">┃ホーム┃</a>
+                        <a href="#" class="cp_btn">┃製作物┃</a>
+                        <a href="#" class="cp_btn">┃日記┃</a>
+                        <a href="#" class="cp_btn">┃記事┃</a>
+                        <a href="#" class="cp_btn">┃ブログ┃</a>
+                    </div>
+
+                    <div class="menubox">
+                        <a class="cp_btn_menu">--LINK--</a>
+                        <a href="https://twitter.com/dj_s_ryzen" class="cp_btn" target="_blank" rel="noopener noreferrer">┃twitter┃</a>
+                        <a href="https://www.pixiv.net/users/15406709" class="cp_btn" target="_blank" rel="noopener noreferrer">┃pixiv┃</a>
+                        <a href="https://github.com/ChomolungmaShirayuki" class="cp_btn" target="_blank" rel="noopener noreferrer">┃github┃</a>
+                    </div>
+
+
+                    <div class="twitter-timeline-box"><a class="twitter-timeline" data-width="800" data-height="1920" data-theme="light" href="https://twitter.com/dj_s_ryzen?ref_src=twsrc%5Etfw">Tweets by dj_s_ryzen</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+                
+                </div>
+                <!--メインコンテンツのボックス-->
+
+
+                <div class="maincontent">
+
+                        <!--ここからメインの内容を書き込む!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+
+                        <h1 class="h1title">おすすめ記事&最新情報！</h1>
+
+                        <!--画像スライドショー-->
+
+                        <div class="cp_cssslider">
+                            <input type="radio" name="cp_switch" id="photo1" checked/>
+                            <label for="photo1"><img src="image/ads/01.jpg" /></label>
+                            <img src="image/ads/01.jpg" class="slimg" />
+                            <input type="radio" name="cp_switch" id="photo2"/>
+                            <label for="photo2"><img src="image/ads/02.jpg" /></label>
+                            <img src="image/ads/02.jpg" class="slimg" />
+                            <input type="radio" name="cp_switch" id="photo3"/>
+                            <label for="photo3"><img src="image/ads/03.jpg" /></label>
+                            <img src="image/ads/03.jpg" class="slimg" />
+                            <input type="radio" name="cp_switch" id="photo4"/>
+                            <label for="photo4"><img src="image/ads/04.jpg" /></label>
+                            <img src="image/ads/04.jpg" class="slimg" />
+                            <input type="radio" name="cp_switch" id="photo5"/>
+                            <label for="photo5"><img src="image/ads/05.jpg" /></label>
+                            <img src="image/ads/05.jpg" class="slimg" />
+                        </div>
+
+                        
+
+
+
+                        <h1 class="h1title">白い家 - TOP PAGE</h1>
+                        <hr class="hr1" />
+                        <p class="text">
+                            "白い家"は、「チョモランマ白雪」の個人ホームページです。
+                        </p>
+                        <p class="text">
+                            <i class="far fa-arrow-alt-circle-right"></i><a href="#" class="cp_textlink06">このページおよびチョモランマ白雪についての説明</a>
+                        </p>
+
+
+
+                        
+                        <h1 class="h1title">白い家へようこそ！！！</h1>
+                        <hr class="hr1" />
+                        <p class="text">
+                            当サイト"白い家"は、管理者のチョモランマ白雪が趣味と勉強のために作成したサイトです。webのデザインやレイアウトを学ぶとともに、役に立つかもしれない情報を提供できたら嬉しいです。<br>
+                        </p>
+                        <p class="text">    
+                            また、こちらのwebサイトはhtml,css,javascript,jQueryによって記述され、githubのサービスを利用して公開しています。
+                        </p>
+
+                        <h2 class="rh3title">何をするサイトなの？</h2>
+                        <p class="text">
+                            正直なところ、まだ方向性が定まっていません。何か作品等を作ったときにイラストや音楽・文章などであれば大丈夫なのですが、もしゲームやその他のファイルなどを公開したいときに自分のページがあると良いと思ったため作成しました。
+                        </p>
+                        <p class="text">
+                            主に音ゲーに関する作品や記事が多くなると思いますので、同業者の方は参考にしていただければ幸いです。
+                        <p class="text">
+                            また、周りで個人サイトを製作するのが流行っていたので便乗したという側面もあります。
+                        </p>
+
+                        <h2 class="rh3title">自己紹介</h2>
+                        <p class="text">
+                            あまり自分のことについて情報を公開しすぎたく無いのですが、ある程度のことについて知ってもらいたいという気持ちもあるので軽く自己紹介をします。
+                        </p>
+
+
+                        <h3 class="h3title">趣味</h3>
+                        
+                        <h4 class="h4title">イラスト</h4>
+
+                        <p class="text">
+                            高校2年生くらいからデジタルで絵を描き始めていたのですが、正直なところ練習し始めたのは2年前、作品を上げ始めたのは直近1年くらいです(2021/12/15現在)。思ったような絵が描ける日とそうでない日の差が激しく、職業にするには全く向いていないです。アマチュアだからこそ楽しい。
+                        </p>
+
+                        <h4 class="h4title">3Dモデリング</h4>
+
+                        <p class="text">
+                            これマジで難しいです。20回くらい引退しています。あと80回くらい復帰したらまともなものが作れるようになると思います。
+                        </p>
+
+                        <h4 class="h4title">料理</h4>
+
+                        <p class="text">
+                            下宿時代や実家で親の帰りが遅いときによく作っていたのですが、次第に楽しくなってきました。ただ、自分だけが食べるものではないことが多いため、新たなレシピの開拓にチャレンジしにくいです。
+                        </p>
+                    
+
+
+                        <h3 class="h3title">やっている音ゲーについて</h3>
+
+                        <p class="text">
+                            全て知っている前提で話してしまうのでご存じない方はスルーしてください。
+                        </p>
+
+                        <h4 class="h4title">CHUNITHM</h4>
+
+                        <p class="text">
+                            いちばん最初にやりこんだ音ゲーです。AC音ゲーの中ではいちばんクレ数が多いですが、未だに謎の巻き込み事故が発生します。
+                        </p>
+
+                        
+                        <h4 class="h4title">maimai</h4>
+
+                        <p class="text">
+                            いちばん成長に時間がかかっている音ゲーです。ゲーセンに行くと最初にmaimaiをプレイして指を温めています。いまのところいちばん楽しい音ゲーです。
+                        </p>
+
+                        
+                        <h4 class="h4title">オンゲキ</h4>
+
+                        <p class="text">
+                            いちばん他のゲームから楽に天下りできる音ゲーだと思います。このゲームに独特な配置が振ってくると意味不明で死にます。
+                        </p>
+
+
+                        <h4 class="h4title">SOUND VOLTEX</h4>
+
+                        <p class="text">
+                            密度はそんなにないはずなのに思ったようなスコアが出なくて悔しいです。3からやっているので(周りと比べると)意外と歴が長いです。
+                        </p>
+
+
+                        <h4 class="h4title">beatmania iidx</h4>
+
+                        <p class="text">
+                            神ゲーです。2年前に始めたんですけどもっと早く始めればよかったです。何を練習すれば良いのかが明確なので成長を感じやすくて本当に楽しかったです。
+                        </p>
+
+
+                        <h3 class="h3title">その他自己紹介</h3>
+                        
+                        <h4 class="h4title">好きな食べ物</h4>
+
+                        <p class="text">
+                            肉全般(特に牛タン、豚タン、鶏むね、鶏もも)が好きです。
+                        </p>
+
+
+                        <h4 class="h4title">嫌いな食べ物</h4>
+
+                        <p class="text">
+                            野菜全般(特に苦いやつ)が嫌いです。食べないと体に悪そうなのでそこまで好きではないですが体に突っ込んでいます。
+                        </p>
+
+
+                        <h4 class="h4title">致命的な欠点</h4>
+
+                        <p class="text">
+                            カフェイン中毒です。中学生の頃から魔剤を飲み続け、今はZONEをかなりの高頻度で消費しています。体に悪いことはわかっていますが、もはや我慢する方が体に悪い影響が出るレベルで中毒です。
+                        </p>
+
+
+                        <h3 class="h3title">最後に一言</h3>
+
+                        <p class="text">
+                            文章を書くのが下手です。そのうちマシになるとは思いますが、当分の間はご勘弁ください。
+                        </p>
+
+                        <p class="text">
+                            最後まで見てくださりありがとうございました！今後どうなるかはわかりませんができる限り更新を続けたいと思います。あ、そういえば言い忘れていましたが私は気分屋なので長く続かないかもしれません。
+                        </p>
+
+
+
+
+
+
+
+                        <!--タイトル＋見出し罫線-->
+                        <h1 class="h1title">マークダウン記法でDiscordのメッセージを装飾する方法</h1>
+                        <!--日付-->
+                        <p class="date">Date ： 2021-12-13</p>
+                        <hr class="hr1" />
+
+                        <p class="text">
+                            現在主流のテキスト・ボイスチャットアプリのDiscordですが、マークダウン記法により文字を装飾することができます。
+                            本記事では文字の装飾方法について紹介していきます。
+                        </p>
+
+                        <!--h2サブタイトル-->
+                        <h2 class="rh3title">目次</h2>
+                        <div class="index_box">
+                            <ul>
+                                <li class="index_li"><a href="#">1.文字の装飾</a></li>
+                                <ul class="index">
+                                    <li><a href="#">太字</a></li>
+                                    <li><a href="#">斜体</a></li>
+                                    <li><a href="#">下線</a></li>
+                                    <li><a href="#">取り消し線</a></li>
+                                </ul>
+                                <li class="index_li"><a href="#">2.文章の装飾</a></li>
+                                <ul class="index">
+                                    <li><a href="#">スポイラー</a></li>
+                                    <li><a href="#">インラインコードブロック</a></li>
+                                    <li><a href="#">コードブロック</a></li>
+                                    <li><a href="#">シンタックスハイライト</a></li>
+                                </ul>
+                            </ul>
+                        </div>
+
+                        <h3 class="h3title">見出しテキスト</h3>
+
+                        
+
+
+                        <!--ここまでメインの内容を書き込む!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+
+                        <!--署名カード-->
+
+                        <div class="cp_blockdesign05">
+                            <div class="cp_authorname">
+                                <h2>チョモランマ白雪</h2>
+                            </div>
+                            <div class="cp_authorinfo"><img src="image/common/icon.png" class="icon"><a class="text">情報系(PG,SE)で就職予定の学生です。趣味は音ゲー、イラストを描くこと、料理など。基本的に創作活動が好きです。あとオタクです。適当にhtmlとcssを勉強してホームページを作って時間を無駄にしています。最近家での楽しみが増えて引きこもりが上手です。</a></div>
+                         </div>
+
+
+                    <hr class="hr1" />
+                </div>
+
+                
+                <!--空白のボックスで位置を調整-->
+                <div class="voidbox"></div>
+            </div>
+        </div>
+        
+
+        <!--フッタ-->
+        
+        <div id="footer"></div>
+        <footer>
+            © 2021 copypet.jp｜パーツで探す、web制作に使えるコピペサイト。 All Rights Reserved.
+        </footer>
+
+        <!--戻るボタン-->
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+        <div id="page_top"><a href="#"></a></div>
+
+        <!--==========フルスクリーンメニュー==========-->
+
+        <div class="cp_fullscreenmenu">
+            <input class="toggle" type="checkbox" />
+            <div class="hamburger"><span></span></div>
+            <div class="menu">
+                <div>
+                <ul>
+                    <li><a href="#">ホーム</a></li>
+                    <li><a href="#">製作物</a></li>
+                    <li><a href="#">日記</a></li>
+                    <li><a href="#">記事</a></li>
+                    <li><a href="#">ブログ</a></li>
+                </ul>
+                </div>
+            </div>
+        </div>
+
+        
+        <!--javascriptのロード呼び出し記述-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="load.js"></script>
+    </body>
+
+</html>
