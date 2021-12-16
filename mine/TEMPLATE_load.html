@@ -33,18 +33,7 @@
         
         <div class="contents">
             <!--ヘッダ-->
-            <header>
-
-                <!--タイトルロゴ-->
-                <h1 class="logo"><img src="image/common/logo.png" style="height:60px;"></h1>
-
-                <!--メインの内容-->
-                <!--ヘッダ画像-->
-                <p id="head"><img src="image/common/head.jpeg" class="headimg"></p>
-
-                <p style="height: 8px;background-image: repeating-linear-gradient(45deg, #ccc 0, #ccc 1px, transparent 0, transparent 50%);background-size: 8px 8px;"></p>
-
-            </header>
+            <div id="load_header"></div>
 
             <!--サイドバー＋メインコンテンツを格納するボックス-->
 
@@ -53,30 +42,9 @@
                 <div class="voidbox"></div>
 
                 <!--サイドバーのボックス-->
-                <div class="sidebar">
+                <div id="load_sidemenu"></div>
 
 
-                    <!--リンクメニュー-->
-                    <div class="menubox">
-                        <a class="cp_btn_menu">--MENU--</a>
-                        <a href="home.html" class="cp_btn">┃ホーム┃</a>
-                        <a href="product_top.html" class="cp_btn">┃製作物┃</a>
-                        <a href="diary_top.html" class="cp_btn">┃日記┃</a>
-                        <a href="article_top.html" class="cp_btn">┃記事┃</a>
-                        <a href="blog_top.html" class="cp_btn">┃ブログ┃</a>
-                    </div>
-
-                    <div class="menubox">
-                        <a class="cp_btn_menu">--LINK--</a>
-                        <a href="https://twitter.com/dj_s_ryzen" class="cp_btn" target="_blank" rel="noopener noreferrer">┃twitter┃</a>
-                        <a href="https://www.pixiv.net/users/15406709" class="cp_btn" target="_blank" rel="noopener noreferrer">┃pixiv┃</a>
-                        <a href="https://github.com/ChomolungmaShirayuki" class="cp_btn" target="_blank" rel="noopener noreferrer">┃github┃</a>
-                    </div>
-
-
-                    <div class="twitter-timeline-box"><a class="twitter-timeline" data-width="800" data-height="1920" data-theme="light" href="https://twitter.com/dj_s_ryzen?ref_src=twsrc%5Etfw">Tweets by dj_s_ryzen</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
-                
-                </div>
                 <!--メインコンテンツのボックス-->
 
 
@@ -92,12 +60,7 @@
 
                         <!--署名カード-->
 
-                        <div class="cp_blockdesign05">
-                            <div class="cp_authorname">
-                                <h2>チョモランマ白雪</h2>
-                            </div>
-                            <div class="cp_authorinfo"><img src="image/common/icon.png" class="icon"><a class="text">情報系(PG,SE)で就職予定の学生です。趣味は音ゲー、イラストを描くこと、料理など。基本的に創作活動が好きです。あとオタクです。適当にhtmlとcssを勉強してホームページを作って時間を無駄にしています。最近家での楽しみが増えて引きこもりが上手です。</a></div>
-                         </div>
+                        <div id="load_signature"></div>
 
 
                     <hr class="hr1" />
@@ -120,21 +83,7 @@
 
         <!--==========フルスクリーンメニュー==========-->
 
-        <div class="cp_fullscreenmenu">
-            <input class="toggle" type="checkbox" />
-            <div class="hamburger"><span></span></div>
-            <div class="menu">
-                <div>
-                <ul>
-                    <li><a href="home.html">ホーム</a></li>
-                    <li><a href="product_top.html">製作物</a></li>
-                    <li><a href="diary_top.html">日記</a></li>
-                    <li><a href="article_top.html">記事</a></li>
-                    <li><a href="blog_top.html">ブログ</a></li>
-                </ul>
-                </div>
-            </div>
-        </div>
+        <div id="load_fs_menu"></div>
 
         
         <!--javascriptのロード呼び出し記述-->
