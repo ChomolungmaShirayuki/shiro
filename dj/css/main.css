@@ -489,6 +489,155 @@ ul.index li:after {
 }
 
 
+/*ブログカード*/
+
+
+.clearfix:before,
+.clearfix:after {
+    content:"";
+    display:table;
+}
+.clearfix:after {
+    clear:both;
+}
+.html_card,
+.ogp_card {
+	border: 1px solid rgba(27, 37, 56, 1);
+	border-radius: 6px;
+	margin: 20px 0;
+	padding: .2em .5em .5em .5em;
+	position: relative;
+}
+.html_card::before,
+.ogp_card::before {
+	position: absolute;
+	top: -20px;
+	left: 1em;
+	content: 'Reference';
+	font-size: .7rem;
+	color: #ffffff;
+	background: rgba(27, 37, 56, 1);
+	border-radius: 6px 6px 0px 0px;
+	padding: .1em .5em;
+}
+.html_card p,
+.ogp_card p {
+	margin: .5em 0 .5em 0;
+	line-height: 1.6em;
+}
+.html_card a,
+.ogp_card a {
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+}
+.ogp_card img {
+	float: right;
+	margin: .5em .5em .5em 1em;
+	border-radius: 6px;
+	width: 100px;
+	height: auto;
+}
+.html_card p.title,
+.ogp_card p.title {
+	position: relative;
+	padding: .3em .3em .3em .75em;
+	border-left: 6px solid rgba(0, 188, 212, 1);
+}
+.html_card p.title::before,
+.ogp_card p.title::before {
+	position: absolute;
+	content: '';
+	left: -6px;
+	bottom: 0;
+	width: 6px;
+	height: 50%;
+	background-color: rgba(27, 37, 56, 1);
+}
+.html_card p.title a,
+.ogp_card p.title a {
+	font-size: 1.1rem;
+	font-weight: bold;
+	color: rgba(27, 37, 56, 1);
+	padding-bottom: .1em;
+	border-bottom: 1px dotted rgba(0, 188, 212, 1);
+	transition: all .3s;
+}
+.html_card p.copy a,
+.ogp_card p.copy a {
+	font-size: .8rem;
+	margin-bottom: 0em;
+	text-decoration: underline;
+	color: #666666;
+	display: block;
+}
+.html_card p.copy a::before,
+.ogp_card p.copy a::before {
+	font-size: .9rem;
+	color: rgba(0, 188, 212, 1);
+	display: inline-block;
+	width: 1.2rem;
+}
+.ogp_card p.card_bt {
+	margin: 0px auto;
+	margin-top: -20px;
+	float: right;
+}
+.html_card p {
+	position: relative;
+}
+.html_card p.card_bt {
+	position: absolute;
+	bottom: 0;
+	right: .5em;
+}
+.html_card p.card_bt a,
+.ogp_card p.card_bt a {
+	display: block;
+	position: relative;
+	width: 120px;
+	padding: 0.2em 0.8em;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	border:1px solid rgba(0, 188, 212, 1);
+	background: rgba(0, 188, 212, 1);
+	overflow: hidden;
+	z-index: 1;
+}
+.html_card p.card_bt a:after,
+.ogp_card p.card_bt a:after  {
+	content:"";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 0;
+	width: 100%;
+	background : #fff;
+	opacity: 0;
+	transform: translateX(-50%) translateY(-50%) rotate(45deg);
+	transition: 0.3s;
+	z-index: -1;
+}
+.html_card p.card_bt a:hover,
+.ogp_card p.card_bt a:hover {
+	color: rgba(0, 188, 212, 1);
+}
+.html_card p.card_bt a:hover:after,
+.ogp_card p.card_bt a:hover:after {
+	height: 350%;
+	opacity: 1;
+}
+.html_card p.card_bt a:active:after,
+.ogp_card p.card_bt a:active:after {
+	height: 450%;
+	opacity: 1;
+}
+
+
+
+
+
 /*テキスト*/
 .text {
     display: block;
@@ -596,7 +745,8 @@ ul.index li:after {
 	color: #3672f4;
 }
 .cp_blockdesign05 .cp_authorinfo {
-	padding: 0.5em 1.5em  0.5em  1.5em;
+	margin:0;
+	padding: 0.4em;
 	float: left;
 }
 
