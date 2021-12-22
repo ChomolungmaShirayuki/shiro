@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/ fb# prefix属性: http://ogp.me/ns/ prefix属性#">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+        <!--ページアイコンの設定-->
+        <link rel="icon" href="favicon.ico">
+
+        <!--OGPの設定-->
+        <meta property="og:url" content=" ページの URL" />
+        <meta property="og:type" content=" website" /><!--トップページwebsiteそれ以外article-->
+        <meta property="og:title" content=" ページの タイトル" /><!--ページのtitleを指定します。一般的にはサイトの~と同じ内容を設定しますが、サイト名などのブランド情報を含まないtitleを20文字以内で設定することが好ましいとされています。-->
+        <meta property="og:description" content=" ページのディスクリプション" /><!--ページの説明文を指定します。と同様の内容で記述することが多いですが、「og:description」での文字数は80~90文字が最適とされています。の文字数は120文字程度なので、内容をそのままを設定してしまうと表示された際に文字が切れてしまう可能性があるため、OGP用に文章を簡略化するとシェアされた際にユーザーに伝わりやすくなります。-->
+        <meta property="og:site_name" content="サイト名" /><!--ページのサイト名を記述します。サイト名やブランド情報は「og:title」ではなく、この「og:site_neme」に設定します。-->
+        <meta property="og:image" content=" サムネイル画像の URL" /><!--SNS上でシェアされた際に表示させたい画像を絶対パスで指定します。Facebookでは画像サイズを1200×630p、比率で「1.91：1」を推奨しています。-->
+
+        <meta name="twitter:card" content="summary_large_image"><!--twitterでの表示を指定-->
+
+        <title>ホーム</title>
+
+
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/menu.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <!--Font Awesome 5のセットアップ-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        
+
+    </head>
+
+    <body>
+
+        
+        <div class="contents">
+            <!--ヘッダ-->
+            <div id="load_header"></div>
+
+            <!--サイドバー＋メインコンテンツを格納するボックス-->
+
+            <div class="mainbox">
+                <!--空白のボックスで位置を調整-->
+                <div class="voidbox"></div>
+
+                <!--サイドバーのボックス-->
+                <div class="sidebar">
+                    <div id="load_sidemenu"></div>
+                </div>
+
+
+                <!--メインコンテンツのボックス-->
+                <div class="maincontent">
+
+                        <!--ここからメインの内容を書き込む!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+
+                        <h1 class="h1title">ブログ - TOP</h1>
+                        <hr class="hr1" />
+                        <p class="text">
+                            ブログのトップページです。今までに私が書いたブログが更新順に並んでいます。
+                        </p>
+                        <p class="text">
+                            主に雑記が多く、暇な方向けです。
+                        </p>
+
+                        <h2 class="h2title">2022年</h2>
+
+                        <h3 class="h3title">1月</h3>
+
+                        <h2 class="h2title">2021年</h2>
+
+                        <h3 class="h3title">12月</h3>
+
+
+
+                        <!--ここまでメインの内容を書き込む!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+
+                        <!--署名カード-->
+
+                        <div id="load_signature"></div>
+
+
+                    <hr class="hr1" />
+                </div>
+
+                
+                <!--空白のボックスで位置を調整-->
+                <div class="voidbox"></div>
+            </div>
+        </div>
+        
+
+        <!--フッタ-->
+        <div id="load_footer"></div>
+
+       
+        <div id="load_fs_menu"></div>
+        
+        <!--javascriptのロード呼び出し記述-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="load.js"></script>
+    </body>
+
+</html>
